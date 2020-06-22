@@ -39,7 +39,7 @@ for($i = 0; $i < $limit; $i++){
         Tip 2: you can also add an image using data-image tag
     -->
       <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Creative Tim
+          Creative tim
         </a></div>
       <div class="sidebar-wrapper">
         <ul class="nav">
@@ -107,11 +107,7 @@ for($i = 0; $i < $limit; $i++){
           <div class="navbar-wrapper">
             <a class="navbar-brand" href="javascript:;">Dashboard</a>
           </div>
-          <div>
-            <div id="chartContainer" style="height: 370px; width: 100%;"></div>
-            <span id="timeToRender"></span>
-            <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-          </div>
+          
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
             <span class="navbar-toggler-icon icon-bar"></span>
@@ -171,11 +167,16 @@ for($i = 0; $i < $limit; $i++){
           </div>
         </div>
       </nav>
+       <div class="con-fluid">
+            <div id="chartContainer" style="height: 370px; width: 90%;"></div>
+            <span id="timeToRender"></span>
+            <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    </div>
       <!-- End Navbar -->
-      
+    </div>
 
-      </div>
-      <footer class="footer">
+   
+    <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left">
             <ul>
@@ -514,7 +515,8 @@ var options = {
   zoomEnabled: true,
   animationEnabled: true,
   title: {
-    text: "Try Zooming - Panning"
+    
+    
   },
   axisY: {
     includeZero: false,
